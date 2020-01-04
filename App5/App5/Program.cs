@@ -33,7 +33,8 @@ namespace App5
             {
                 Console.WriteLine("Ne, antrasSarasas nera pirmasSarasas dalis");
             }
-            Console.Read();
+            Console.ReadLine();
+
         }
     }
 }
