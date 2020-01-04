@@ -22,7 +22,10 @@ namespace App2
                 bendrasSarasas.Add(vardas);
             }
             bendrasSarasas.Sort();
-            bendrasSarasas.ForEach(delegate(String vardas) { Console.WriteLine(vardas); });
+            bendrasSarasas.ForEach(delegate(String vardas) 
+            {
+                Console.WriteLine(vardas); 
+            });
             bendrasSarasas.ForEach(vardas => Console.WriteLine(vardas) );
             Console.Read();
         }

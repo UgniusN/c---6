@@ -17,6 +17,7 @@ namespace App4
             int grade;
             int pozicija;
             string ivedamapozicija;
+            double vidurkis = 0;
             while (!ciklas)
             {
                 Console.WriteLine("Iveskite pasirinkima: 0 - papildyti, 1 - istrinti, 2 - iterpti, 3 - parodyti pazymiu vidurki, 4 - iseiti is programos");
@@ -48,10 +49,10 @@ namespace App4
                     case 3:
                         foreach(int pazimys in pazymiai)
                         {
-                            double vidurkis;
-                            vidurkis+= pazimys;
-
+                            vidurkis += pazimys;
                         }
+                        vidurkis = vidurkis / pazymiai.Count;
+                        Console.WriteLine("Pazymiu vidurkis: {0}", vidurkis);
                         break;
                     case 4:
                         ciklas = true;
