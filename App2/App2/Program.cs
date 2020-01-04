@@ -10,6 +10,20 @@ namespace App2
     {
         static void Main(string[] args)
         {
+            List<String> Studentai = new List<String>() { "Ugnius", "Andrius", "Jonas", "Petras", "Audrius" };
+            List<String> pavelaveStudentai = new List<String> { "Antanas", "Gvidas", "Erikas", "Nojus " };
+            List<String> bendrasSarasas = new List<String>();
+            foreach(string vardas in pavelaveStudentai)
+            {
+                bendrasSarasas.Add(vardas);
+            }
+            foreach(string vardas in Studentai)
+            {
+                bendrasSarasas.Add(vardas);
+            }
+            bendrasSarasas.Sort();
+            bendrasSarasas.ForEach(delegate(String vardas) { Console.WriteLine(vardas); });
+            Console.Read();
         }
     }
 }
