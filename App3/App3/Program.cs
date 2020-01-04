@@ -10,6 +10,18 @@ namespace App3
     {
         static void Main(string[] args)
         {
+            List<String> vardai = new List<String> { "Ugnius", "Petras", "Juozas", "Audrius", "Nojus" };
+            vardai.Add("Napoleonas");
+            vardai.Add("Asterisas");
+            vardai.RemoveAt(2);
+            vardai[vardai.IndexOf("Napoleonas")] = "Kleopatra";
+
+            foreach (string vardas in vardai)
+            {
+                Console.WriteLine(vardas);
+            }
+
+            Console.Read();
         }
     }
 }
